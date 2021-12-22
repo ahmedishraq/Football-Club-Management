@@ -64,20 +64,23 @@
 }
 
 .button-log {
-  float: right;
    -webkit-border-radius: 24px;
    -moz-border-radius: 24px;
    border-radius: 24px;
+   height: 3px;
+   line-height: 3px;
    color: #FFFFFF;
    font-family: Arial;
+   width: 300px;
    font-size: 18px;
    font-weight: 100;
-   padding: 15px;
+   padding: 20px;
    background-color: #F31B2F;
    text-decoration: none;
-   display: inline-block;
+   display: block;
    cursor: pointer;
    text-align: center;
+   margin: auto;
 }
 
 /*.button-log:hover {
@@ -114,4 +117,13 @@
 
 .sub-log{
   text-align: center;
+  text-decoration: bold;
+}
+
+a{
+  color: black;
+}
+
+a:hover, a:active{
+  color: red;
 }
