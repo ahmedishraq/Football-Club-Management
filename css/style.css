@@ -65,17 +65,30 @@
 
 .button-log {
   float: right;
-  background: #555;
-  padding: 10px 15px;
-  color: #fff;
-  border-radius: 5px;
-  margin-right: 10px;
-  border: none;
-}
-.button-log:hover{
-  opacity: .7;
+   -webkit-border-radius: 24px;
+   -moz-border-radius: 24px;
+   border-radius: 24px;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-size: 18px;
+   font-weight: 100;
+   padding: 15px;
+   background-color: #F31B2F;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
 }
 
+/*.button-log:hover {
+   background: #DF1951;
+   border: solid #DF1951 0;
+   -webkit-border-radius: 24px;
+   -moz-border-radius: 24px;
+   border-radius: 24px;
+   text-decoration: none;
+}
+*/
 .body-log{
   /*background: #1690A7;*/
   display: flex;
@@ -97,4 +110,8 @@
 .title-log{
   text-align: center;
   margin-bottom: 40px;
+}
+
+.sub-log{
+  text-align: center;
 }
