@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Football Club Management</title>
-    <link href="css/login_style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body class="body-log">
          <form action="login.php" method="post">
-      <h2>LOGIN</h2>
+      <h2 class="title-log">LOGIN</h2>
       <?php if (isset($_GET['error'])) { ?>
         <p class="error"><?php echo $_GET['error']; ?></p>
       <?php } ?>
       <label class="label-form">User Name</label>
       <input class="input-form" type="text" name="uname" placeholder="User Name"><br>
 
-      <label class="label-form">User Name</label>
+      <label class="label-form">Password</label>
       <input class="input-form" type="password" name="password" placeholder="Password"><br>
 
       <button class="button-log" type="submit">Login</button>
