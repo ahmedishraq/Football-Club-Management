@@ -44,7 +44,7 @@
   form {
   width: 500px;
   border: 2px solid #ccc;
-  padding: 30px;
+  padding: 40px;
   background: #fff;
   border-radius: 15px;
 }
@@ -113,6 +113,11 @@
 .title-log{
   text-align: center;
   margin-bottom: 40px;
+}
+.title-sig{
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 300px;
 }
 
 .sub-log{
