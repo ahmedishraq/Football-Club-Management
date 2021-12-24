@@ -13,7 +13,7 @@ create table users
 		date_of_birth int(8) not null 
 		);
 
-insert into users
+insert into users values
 	(
 		"Ishraq Ahmed","ishraqahmedbd@gmail.com","ahmed_ishraq","1234",01534741641,"Dhaka","07-04-1999"
 		);
