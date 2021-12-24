@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body class="body-log">
-         <form action="login.php" method="post">
+         <form action="login-info.php" method="post">
       <h2 class="title-log">LOG IN TO MY UNITED</h2>
       <div>
         <h4 class="sub-log"> Don't have an account? <a href="signup.html">Sign for United</a></h4>
