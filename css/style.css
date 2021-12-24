@@ -92,26 +92,6 @@
    text-decoration: none;
 }
 */
-.button-sig {
-   -webkit-border-radius: 24px;
-   -moz-border-radius: 24px;
-   border-radius: 24px;
-   height: 3px;
-   line-height: 3px;
-   color: #FFFFFF;
-   font-family: Arial;
-   width: 250px;
-   font-size: 18px;
-   font-weight: 100;
-   padding: 20px;
-   background-color: #F31B2F;
-   text-decoration: none;
-   display: block;
-   cursor: pointer;
-   /*text-align: center;
-   margin: auto;*/
-}
-
 .body-log{
   /*background: #1690A7;*/
   display: flex;
