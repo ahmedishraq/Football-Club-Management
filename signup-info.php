@@ -1,15 +1,18 @@
 <?php 
 
-$conn = mysqli_connect("localhost", "root");
+// $conn = mysqli_connect("localhost", "root");
 
-if($conn){
-	echo "Connection successful!";
-}
-else{
-	echo "No Connection";
-}
+// if($conn){
+// 	echo "Connection successful!";
+// }
+// else{
+// 	echo "No Connection";
+// }
 
-mysqli_select_db($conn, "football_club_management");
+// mysqli_select_db($conn, "football_club_management");
+
+session_start();
+include "db_conn.php";
 
 $name = $_POST['name'];
 $email = $_POST['email'];
