@@ -1,49 +1,29 @@
-<?php 
-session_start(); 
-include "db_conn.php";
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Football Club Management</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="body-log">
+         <form action="login.php" method="post">
+      <h2 class="title-log">LOG IN TO MY UNITED</h2>
+      <div>
+        <h4 class="sub-log"> Don't have an account? <a href="signup.html">Sign for United</a></h4>
+      </div>
+      <?php if (isset($_GET['error'])) { ?>
+        <p class="error"><?php echo $_GET['error']; ?></p>
+      <?php } ?>
+      <label class="label-form">User Name</label>
+      <input class="input-form" type="text" name="uname" placeholder="User Name"><br>
 
-if (isset($_POST['uname']) && isset($_POST['password'])) {
+      <label class="label-form">Password</label>
+      <input class="input-form" type="password" name="password" placeholder="Password"><br>
 
-	function validate($data){
-       $data = trim($data);
-	   $data = stripslashes($data);
-	   $data = htmlspecialchars($data);
-	   return $data;
-	}
+        <button class="button-log" type="submit">Login</button>  
+     </form>
 
-	$uname = validate($_POST['uname']);
-	$pass = validate($_POST['password']);
-
-	if (empty($uname)) {
-		header("Location: index.php?error=User Name is required");
-	    exit();
-	}else if(empty($pass)){
-        header("Location: index.php?error=Password is required");
-	    exit();
-	}else{
-		$sql = "SELECT * FROM users WHERE user_id='$uname' AND password='$pass'";
-
-		$result = mysqli_query($conn, $sql);
-
-		if (mysqli_num_rows($result) === 1) {
-			$row = mysqli_fetch_assoc($result);
-            if ($row['user_id'] === $uname && $row['password'] === $pass) {
-            	$_SESSION['user_id'] = $row['user_id'];
-            	$_SESSION['name'] = $row['name'];
-            	// $_SESSION['id'] = $row['id'];
-            	header("Location: index.html");
-		        exit();
-            }else{
-				header("Location: index.php?error=Incorect User name or password");
-		        exit();
-			}
-		}else{
-			header("Location: index.php?error=Incorect User name or password");
-	        exit();
-		}
-	}
-	
-}else{
-	header("Location: index.php");
-	exit();
-}
+    <script src="script.js"></script>
+  </body>
+</html>
