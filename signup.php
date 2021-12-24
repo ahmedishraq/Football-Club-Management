@@ -10,7 +10,7 @@
          <form action="signup-info.php" method="post">
       <h2 class="title-sig">SIGN FOR UNITED</h2>
       <div>
-        <h4 class="sub-log">Already have an account? <a href="login.html">LOG IN for United</a></h4>
+        <h4 class="sub-log">Already have an account? <a href="login.php">LOG IN for United</a></h4>
       </div>
       <?php if (isset($_GET['error'])) { ?>
         <p class="error"><?php echo $_GET['error']; ?></p>
