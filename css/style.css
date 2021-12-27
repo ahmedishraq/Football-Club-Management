@@ -41,9 +41,9 @@
   }
   /*Login button end*/
 
-  form {
+.log-form{
   width: 500px;
-  border: 2px solid #ccc;
+  border: 5px solid #ccc;
   padding: 40px;
   background: #fff;
   border-radius: 15px;
@@ -132,66 +132,3 @@ a{
 a:hover, a:active{
   color: red;
 }
-
-/*Index page css part start*/
-
-    body{
-      font-family:"Arial", sans-serif;
-      margin:0px;
-    background-color: white;
-    }
-
-    header{
-
-font-family: "Arial" , sans-serif;
-text-align: center;
-background-image: url("https://drive.google.com/uc?export=view&id=1f7N-8LcI2PVpLm7LRHWtPtZ-yJCX-qKc");
-
-          color: #b30000;
-          padding:250px;
-          font-size: 50px;
-
-        }
-   
- nav{
-background-color: #b30000;
-overflow: hidden;
-
-}
-  nav ul{
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-
-  }
-  nav ul li{
-    float: left;
-
-  }
-  nav ul li a{
-    text-decoration: none;
-    color:white;
-    padding: 10px 25px;
-    display: inline-block;
-    font-size: 18px;
-
-  }
-  nav ul li a:hover{
-    background-color: black;
-  }
-  nav ul li a.active{
-    background-color: grey;
-  }
-
-.title{
-  background-image: url("https://drive.google.com/uc?export=view&id=1iSeV7imNZgWfMXyB58lwARElfbQ44TDV");
-  width: 100%;
-  padding: 12px 20px;
-  margin-top: 40px;
-  text-align:center;
-  text-transform: Uppercase;
-  font-weight: 800;
-  font-size: 30px;
-}
-
-/*Index page css part end*/

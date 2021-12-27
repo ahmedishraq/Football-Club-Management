@@ -1,47 +1,85 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <title>Manchester United</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      body{
+    	 font-family:"Arial", sans-serif;
+    	 margin:0px;
+		  background-color: white;
+      }
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      header{
+        font-family: "Arial" , sans-serif;
+        text-align: center;
+        background-image: url("https://drive.google.com/uc?export=view&id=1f7N-8LcI2PVpLm7LRHWtPtZ-yJCX-qKc");
+        color: #b30000;
+        padding:250px;
+        font-size: 50px;
+        }
+   
+ nav{
+  background-color: #b30000;
+  overflow: hidden;
+  }
 
-  </head>
-  <body>
-    <header>
-      <h1>Manchester United</h1>
-    </header>
-    <!-- Hello world. -->
-    <!-- <form method="POST" action="login.html">
-      <input type="submit" value="LOGIN"/>
-     </form>
-      -->
-<!--      <div>
-      <button class="button" onclick="location.href = 'login.php'">LOG IN</button>
-    </div>
+  nav ul{
+  	list-style: none;
+  	padding: 0px;
+  	margin: 0px;
 
-    <div>
-      <button class="button" onclick="location.href = 'signup.php'">SIGN UP</button>
-    </div>
- -->
+  }
+  nav ul li{
+  	float: left;
 
-    <div>
-      <nav>
-        <ul>
-          <li><b><a href="index.php">HOME</a></b></li>
-          <li><b><a href="R_servicerequest.php">PLAYERS</a></b></li>
-          <li><b><a href="S.M_mechaniclogin.php">CLUB STAFF</a></b></li>
-          <li><b><a href="S.M_userlogin.php">BOARD MEMBERS</a></b></li>
-          <li><b><a href="S.M_adminlogin.php">CLUB SHOP</a></b></li>
-          <li><b><a href="login.php">LOG IN</a></b></li>
-          <li><b><a href="signup.php">SIGN UP</a></b></li>
+  }
+  nav ul li a{
+  	text-decoration: none;
+  	color:white;
+  	padding: 10px 25px;
+  	display: inline-block;
+  	font-size: 18px;
 
-        </ul>
-      </nav>
-    </div>
+  }
+  nav ul li a:hover{
+  	background-color: black;
+  }
+  nav ul li a.active{
+  	background-color: grey;
+  }
 
-    <script src="script.js"></script>
-  </body>
-</html>
+  .title{
+    background-image: url("https://drive.google.com/uc?export=view&id=1iSeV7imNZgWfMXyB58lwARElfbQ44TDV");
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 40px;
+    text-align:center;
+    text-transform: Uppercase;
+    font-weight: 800;
+    font-size: 30px;
+  }
+
+  </style>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<!-- main header -->
+<header>
+	<h1>MANCHESTER UNITED</h1>
+	
+</header>
+<!-- main nav -->
+<nav>
+	<ul>
+	<li><b><a href="index.php">HOME</a></b></li>
+	<li><b><a href="R_servicerequest.php">PLAYERS</a></b></li>
+	<li><b><a href="S.M_mechaniclogin.php">CLUB STAFF</a></b></li>
+	<li><b><a href="S.M_userlogin.php">BOARD MEMBERS</a></b></li>
+	<li><b><a href="S.M_adminlogin.php">CLUB SHOP</a></b></li>
+  <li><b><a href="login.php">LOG IN</a></b></li>
+  <li><b><a href="signup.php">SIGN UP</a></b></li>
+</ul>
+</nav>
