@@ -84,9 +84,10 @@
 }
 
 label{
-  color: #888;
+  color: black;
   font-size: 18px;
   padding: 10px;
+  font-style: bold;
 }
 
 input{
@@ -169,7 +170,7 @@ form{
         <p class="error"><?php echo $_GET['error']; ?></p>
       <?php } ?>
       <label>User ID</label>
-      <input type="text" name="uname" placeholder="User ID"><br>
+      <input type="text" name="uname" placeholder=""><br>
 
         <button class="button-log" type="submit">Login</button>  
      </form>

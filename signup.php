@@ -83,9 +83,10 @@
 }
 
 label{
-  color: #888;
+  color: black;
   font-size: 18px;
   padding: 10px;
+  font-style: bold;
 }
 
 input{
@@ -170,25 +171,25 @@ form{
         <p class="error"><?php echo $_GET['error']; ?></p>
       <?php } ?>
       <label>Name</label>
-      <input type="text" name="name" placeholder="Name"><br>
+      <input type="text" name="name" placeholder=""><br>
 
       <label>Email Address</label>
-      <input type="text" name="email" placeholder="Email Address"><br>
+      <input type="text" name="email" placeholder=""><br>
 
       <label>User ID</label>
-      <input type="text" name="uid" placeholder="User ID"><br>
+      <input type="text" name="uid" placeholder=""><br>
 
       <label>Password</label>
-      <input type="password" name="password" placeholder="Password"><br>
+      <input type="password" name="password" placeholder=""><br>
 
       <label>Phone Number</label>
-      <input type="tel" name="phone" placeholder="Phone Number"><br>
+      <input type="tel" name="phone" placeholder=""><br>
 
       <label>Region</label>
-      <input type="text" name="region" placeholder="Region"><br>
+      <input type="text" name="region" placeholder=""><br>
 
       <label>Date Of Birth</label>
-      <input type="date" name="dob" placeholder="Date Of Birth"><br>
+      <input type="date" name="dob" placeholder=""><br>
 
         <button class="button-log" type="submit">SIGN FOR UNITED</button>  
      </form>
