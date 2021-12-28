@@ -108,10 +108,11 @@ form{
 
 .body-log{
   /*background: #1690A7;*/
+  font-family: "Arial", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /*height: 100vh;*/
   flex-direction: column;
 }
 
@@ -159,9 +160,11 @@ form{
     <header>
       <h1>MANCHESTER UNITED</h1>  
     </header>
+    <section id="section1">
+      <div class="title" style="color:white;">MY UNITED</div><br style="line-height: 100px;">
       <div class="body-log">
          <form action="login-info.php" method="post">
-      <h2 class="title-log">LOG IN TO MY UNITED</h2>
+      <h2 class="title-log">LOG IN</h2>
       <div>
         <h4 class="sub-log"> Don't have an account? <a href="signup.php" class="design">Sign for United</a></h4>
       </div>
@@ -181,7 +184,7 @@ form{
 
 
 <!-- main footer -->
-</section>
+</section><br style="line-height: 100px;">
 <footer>
 <h5 style="color:black" align="center";>Copyright &copy;2021-2022 , Manchester United</h5>
 <p style="color:red" align="center";>All rights are reserved.</p>

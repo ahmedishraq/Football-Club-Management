@@ -44,6 +44,7 @@
   }
   nav ul li a:hover{
   	background-color: black;
+    color: #ffffff;
   }
   nav ul li a.active{
   	background-color: grey;
@@ -75,7 +76,7 @@
 <nav>
 	<ul>
 	<li><b><a href="index.php">HOME</a></b></li>
-	<li><b><a href="R_servicerequest.php">PLAYERS</a></b></li>
+	<li><b><a href="all_players.php">PLAYERS</a></b></li>
 	<li><b><a href="S.M_mechaniclogin.php">CLUB STAFF</a></b></li>
 	<li><b><a href="S.M_userlogin.php">BOARD MEMBERS</a></b></li>
 	<li><b><a href="S.M_adminlogin.php">CLUB SHOP</a></b></li>

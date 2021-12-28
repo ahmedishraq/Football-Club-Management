@@ -98,7 +98,6 @@ input{
 }
 
 form{
-  display: block;
   width: 500px;
   border: 5px solid #ccc;
   padding: 40px;
@@ -108,11 +107,13 @@ form{
 
 .body-log{
   /*background: #1690A7;*/
+  font-family: "Arial", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  /*height: 100vh;*/
   flex-direction: column;
+
 }
 
 .error {
@@ -157,6 +158,8 @@ form{
         <header>
       <h1>MANCHESTER UNITED</h1>  
     </header>
+    <section id="section1">
+      <div class="title" style="color:white;">MY UNITED</div><br style="line-height: 100px;">
     <div class="body-log">
          <form action="signup-info.php" method="post">
       <h2 class="title-sig">SIGN FOR UNITED</h2>
@@ -166,26 +169,26 @@ form{
       <?php if (isset($_GET['error'])) { ?>
         <p class="error"><?php echo $_GET['error']; ?></p>
       <?php } ?>
-      <label class="label-form">Name</label>
-      <input class="input-form" type="text" name="name" placeholder="Name"><br>
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Name"><br>
 
-      <label class="label-form">Email Address</label>
-      <input class="input-form" type="text" name="email" placeholder="Email Address"><br>
+      <label>Email Address</label>
+      <input type="text" name="email" placeholder="Email Address"><br>
 
-      <label class="label-form">User ID</label>
-      <input class="input-form" type="text" name="uid" placeholder="User ID"><br>
+      <label>User ID</label>
+      <input type="text" name="uid" placeholder="User ID"><br>
 
-      <label class="label-form">Password</label>
-      <input class="input-form" type="password" name="password" placeholder="Password"><br>
+      <label>Password</label>
+      <input type="password" name="password" placeholder="Password"><br>
 
-      <label class="label-form">Phone Number</label>
-      <input class="input-form" type="tel" name="phone" placeholder="Phone Number"><br>
+      <label>Phone Number</label>
+      <input type="tel" name="phone" placeholder="Phone Number"><br>
 
-      <label class="label-form">Region</label>
-      <input class="input-form" type="text" name="region" placeholder="Region"><br>
+      <label>Region</label>
+      <input type="text" name="region" placeholder="Region"><br>
 
-      <label class="label-form">Date Of Birth</label>
-      <input class="input-form" type="date" name="dob" placeholder="Date Of Birth"><br>
+      <label>Date Of Birth</label>
+      <input type="date" name="dob" placeholder="Date Of Birth"><br>
 
         <button class="button-log" type="submit">SIGN FOR UNITED</button>  
      </form>
@@ -193,7 +196,7 @@ form{
 
 
 <!-- main footer -->
-</section>
+</section><br style="line-height: 100px;">
 <footer>
 <h5 style="color:black" align="center";>Copyright &copy;2021-2022 , Manchester United</h5>
 <p style="color:red" align="center";>All rights are reserved.</p>
