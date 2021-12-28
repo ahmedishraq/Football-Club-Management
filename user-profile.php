@@ -88,7 +88,6 @@
 	<li><b><a href="S.M_mechaniclogin.php">CLUB STAFF</a></b></li>
 	<li><b><a href="S.M_userlogin.php">BOARD MEMBERS</a></b></li>
 	<li><b><a href="S.M_adminlogin.php">CLUB SHOP</a></b></li>
-  <li><b><a href="login.php">LOG OUT</a></b></li>
 </ul>
 </nav>
 
