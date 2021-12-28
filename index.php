@@ -81,6 +81,6 @@
 	<li><b><a href="S.M_userlogin.php">BOARD MEMBERS</a></b></li>
 	<li><b><a href="S.M_adminlogin.php">CLUB SHOP</a></b></li>
   <li><b><a href="login.php">LOG IN</a></b></li>
-  <li><b><a href="signup.php">SIGN UP</a></b></li>
+  <li><b><a href="admin.php">ADMIN</a></b></li>
 </ul>
 </nav>

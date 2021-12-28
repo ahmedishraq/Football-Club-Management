@@ -100,7 +100,7 @@ input{
 
 form{
   width: 500px;
-  border: 5px solid #ccc;
+  border: 5px solid #b30000;
   padding: 40px;
   background: #fff;
   border-radius: 15px;
@@ -163,19 +163,13 @@ form{
     <section id="section1">
       <div class="title" style="color:white;">MY UNITED</div><br style="line-height: 100px;">
       <div class="body-log">
-         <form action="login-info.php" method="post">
+         <form action="admin-info.php" method="post">
       <h2 class="title-log">ADMIN LOG IN</h2>
-     <!--  <div>
-        <h4 class="sub-log"> Don't have an account? <a href="signup.php" class="design">Sign for United</a></h4>
-      </div> -->
       <?php if (isset($_GET['error'])) { ?>
         <p class="error"><?php echo $_GET['error']; ?></p>
       <?php } ?>
-      <label>User Name</label>
-      <input type="text" name="uname" placeholder="User Name"><br>
-
-      <label>Password</label>
-      <input type="password" name="password" placeholder="Password"><br>
+      <label>User ID</label>
+      <input type="text" name="uname" placeholder="User ID"><br>
 
         <button class="button-log" type="submit">Login</button>  
      </form>

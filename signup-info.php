@@ -25,5 +25,6 @@ $dob = $_POST['dob'];
 $query = "insert into users values ('$name', '$email', '$uid', '$password', '$phone', '$region', '$dob') ";
 
 mysqli_query($conn, $query);
+header("Location: login.php");
 
 ?>
