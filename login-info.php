@@ -30,8 +30,12 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
             if ($row['user_id'] === $uname && $row['password'] === $pass) {
             	$_SESSION['user_id'] = $row['user_id'];
             	$_SESSION['name'] = $row['name'];
+            	$_SESSION['email_address'] = $row['email_address'];
+            	$_SESSION['phone_number'] = $row['phone_number'];
+            	$_SESSION['region'] = $row['region'];
+            	$_SESSION['date_of_birth'] = $row['date_of_birth'];
             	// $_SESSION['id'] = $row['id'];
-            	header("Location: index.html");
+            	header("Location: user-profile.php");
 		        exit();
             }else{
 				header("Location: login.php?error=Incorrect User name or password");

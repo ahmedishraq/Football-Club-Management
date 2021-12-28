@@ -46,6 +46,7 @@
   }
   nav ul li a:hover{
     background-color: black;
+    color: #ffffff;
   }
   nav ul li a.active{
     background-color: grey;
@@ -159,13 +160,18 @@ form{
         <header>
       <h1>MANCHESTER UNITED</h1>  
     </header>
+        <nav>
+  <ul>
+  <li><b><a href="index.php">HOME</a></b></li>
+</ul>
+</nav>
     <section id="section1">
       <div class="title" style="color:white;">MY UNITED</div><br style="line-height: 100px;">
     <div class="body-log">
          <form action="signup-info.php" method="post">
       <h2 class="title-sig">SIGN FOR UNITED</h2>
       <div>
-        <h4 class="sub-log">Already have an account? <a href="login.php" class="design">LOG IN for United</a></h4>
+        <h4 class="sub-log">Already have an account? <a href="login.php" class="design">LOG IN for United</a></h4><br>
       </div>
       <?php if (isset($_GET['error'])) { ?>
         <p class="error"><?php echo $_GET['error']; ?></p>

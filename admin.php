@@ -47,6 +47,7 @@
   }
   nav ul li a:hover{
     background-color: black;
+    color: #ffffff;
   }
   nav ul li a.active{
     background-color: grey;
@@ -161,6 +162,11 @@ form{
     <header>
       <h1>MANCHESTER UNITED</h1>  
     </header>
+        <nav>
+  <ul>
+  <li><b><a href="index.php">HOME</a></b></li>
+</ul>
+</nav>
     <section id="section1">
       <div class="title" style="color:white;">MY UNITED</div><br style="line-height: 100px;">
       <div class="body-log">
