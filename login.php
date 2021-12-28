@@ -100,7 +100,7 @@ input{
 
 form{
   width: 500px;
-  border: 5px solid #ccc;
+  border: 5px solid #b30000;
   padding: 40px;
   background: #fff;
   border-radius: 15px;

@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-        <title>Manchester United</title>
+        <meta charset="UTF-8">
+    <title>Manchester United</title>
 
     <style>
       body{
@@ -99,7 +100,7 @@ input{
 
 form{
   width: 500px;
-  border: 5px solid #b30000;
+  border: 5px solid #ccc;
   padding: 40px;
   background: #fff;
   border-radius: 15px;
@@ -113,7 +114,6 @@ form{
   align-items: center;
   /*height: 100vh;*/
   flex-direction: column;
-
 }
 
 .error {
@@ -132,7 +132,7 @@ form{
 .title-sig{
   text-align: center;
   margin-bottom: 40px;
-  /*margin-top: 300px;*/
+  margin-top: 300px;
 }
 
 .sub-log{
@@ -152,46 +152,34 @@ form{
   </style>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <!-- <link href="css/style.css" rel="stylesheet" type="text/css" /> -->
   </head>
+
   <body>
-        <header>
+    <header>
       <h1>MANCHESTER UNITED</h1>  
     </header>
     <section id="section1">
       <div class="title" style="color:white;">MY UNITED</div><br style="line-height: 100px;">
-    <div class="body-log">
-         <form action="signup-info.php" method="post">
-      <h2 class="title-sig">SIGN FOR UNITED</h2>
-      <div>
-        <h4 class="sub-log">Already have an account? <a href="login.php" class="design">LOG IN for United</a></h4>
-      </div>
+      <div class="body-log">
+         <form action="login-info.php" method="post">
+      <h2 class="title-log">ADMIN LOG IN</h2>
+     <!--  <div>
+        <h4 class="sub-log"> Don't have an account? <a href="signup.php" class="design">Sign for United</a></h4>
+      </div> -->
       <?php if (isset($_GET['error'])) { ?>
         <p class="error"><?php echo $_GET['error']; ?></p>
       <?php } ?>
-      <label>Name</label>
-      <input type="text" name="name" placeholder="Name"><br>
-
-      <label>Email Address</label>
-      <input type="text" name="email" placeholder="Email Address"><br>
-
-      <label>User ID</label>
-      <input type="text" name="uid" placeholder="User ID"><br>
+      <label>User Name</label>
+      <input type="text" name="uname" placeholder="User Name"><br>
 
       <label>Password</label>
       <input type="password" name="password" placeholder="Password"><br>
 
-      <label>Phone Number</label>
-      <input type="tel" name="phone" placeholder="Phone Number"><br>
-
-      <label>Region</label>
-      <input type="text" name="region" placeholder="Region"><br>
-
-      <label>Date Of Birth</label>
-      <input type="date" name="dob" placeholder="Date Of Birth"><br>
-
-        <button class="button-log" type="submit">SIGN FOR UNITED</button>  
+        <button class="button-log" type="submit">Login</button>  
      </form>
+
    </div>
 
 
@@ -202,6 +190,7 @@ form{
 <p style="color:red" align="center";>All rights are reserved.</p>
 <small style="color:black">Developed & maintained by Mustakin, Wakil, Sababa, Ishraq, Bidhan</small>
 </footer>
+
 
   </body>
 </html>
