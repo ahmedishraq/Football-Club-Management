@@ -33,7 +33,7 @@ if (isset($_POST['uname'])) {
             	$_SESSION['member_id'] = $row['member_id'];
             	// $_SESSION['name'] = $row['name'];
             	// $_SESSION['id'] = $row['id'];
-            	header("Location: index.php");
+            	header("Location: add_update_board_members.php");
 		        exit();
             }else{
 				header("Location: admin.php?error=Incorrect User ID");
