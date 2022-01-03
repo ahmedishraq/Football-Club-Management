@@ -46,7 +46,7 @@ if (isset($_POST['uname'])) {
             	$_SESSION['initial'] = $row['initial'];
             	// $_SESSION['name'] = $row['name'];
             	// $_SESSION['id'] = $row['id'];
-            	header("Location: index.php");
+            	header("Location: modify_players_cf.php");
 		        exit();
             }else{
 				header("Location: admin.php?error=Incorrect User ID");
@@ -59,7 +59,7 @@ if (isset($_POST['uname'])) {
             	$_SESSION['staff_id'] = $row['staff_id'];
             	// $_SESSION['name'] = $row['name'];
             	// $_SESSION['id'] = $row['id'];
-            	header("Location: index.php");
+            	header("Location: add_update_delete_club_shop.php");
 		        exit();
             }else{
 				header("Location: admin.php?error=Incorrect User ID");

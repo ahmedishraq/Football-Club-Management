@@ -118,40 +118,46 @@
 <nav>
 	<ul>
 	<li><b><a href="index.php">HOME</a></b></li>
-	<li><b><a href="modify_players.php">PLAYERS</a></b></li>
-	<li><b><a href="show_club_staff.php">CLUB STAFF</a></b></li>
-	<li><b><a href="add_update_board_members.php">BOARD MEMBERS</a></b></li>
-	<li><b><a href="add_update_shop_staff.php">SHOP STAFF</a></b></li>
+	<li><b><a href="#">PLAYERS</a></b></li>
+	<li><b><a href="#">CLUB STAFF</a></b></li>
+	<li><b><a href="#">BOARD MEMBERS</a></b></li>
+	<li><b><a href="#">CLUB SHOP</a></b></li>
+
 </ul>
 </nav>
 
 <!-- contents -->
 
 <section id = "section1">
-        <div class="title" style="color:white";> Add a New Shop Staff </div>
+        <div class="title" style="color:white";> Add a new item </div>
 
         
-          <form action = "insert_shop_staff.php" method="post">
-		  <div style="text-align:center; font-size: 20px">Staff ID: <input type="text" name="staff_id"></div><br/>
-		  <div style="text-align:center; font-size: 20px">Name: <input type="text" name="name"></div><br/>
-		  <div style="text-align:center; font-size: 20px">Email: <input type="text" name="email"></div><br/>
-		  <div style="text-align:center; font-size: 20px">Salary: <input type="int" name="salary"></div><br/>
-		  <div style="text-align:center; font-size: 20px">Supervisor: <input type="text" name="supervisor"></div><br/>
+          <form action = "insert_club_shop.php" method="post">
+		  <div style="text-align:center; font-size: 20px">Shop ID: <input type="text" name="shop_id"></div><br/>
+		  <div style="text-align:center; font-size: 20px">Selling Item: <input type="text" name="selling_item"></div><br/>
+		  <div style="text-align:center; font-size: 20px">In Stock: <input type="int" name="quantity"></div><br/>
+		  <div style="text-align:center; font-size: 20px">Price(£): <input type="int" name="price"></div><br/>
 		  <br/>
 		  <div style="text-align:center; font-size: 15px"><input type="submit" value="Add to Database"></div><br/>
 		  </form>
-		  <div class="title" style="color:white";> Modify Shop Staff </div>
-
-        
-          <form action = "modify_shop_staff.php" method="post">
-		  <div style="text-align:center; font-size: 20px">SET Name: <input type="text" name="name"></div><br/>
-		  <div style="text-align:center; font-size: 20px">SET Email: <input type="text" name="email"></div><br/>
-		  <div style="text-align:center; font-size: 20px">SET Salary: <input type="int" name="salary"></div><br/>
-		  <div style="text-align:center; font-size: 20px">SET Supervisor: <input type="text" name="supervisor"></div><br/>
-		 
-		  <div style="text-align:center; font-size: 20px">WHERE Staff ID: <input type="text" name="staff_id"></div><br/>
+		  
+		  <div class="title" style="color:white";> Modify Item </div>
+          <form action = "modify_club_shop.php" method="post">
+			  <div style="text-align:center; font-size: 20px">Set Quantity: <input type="int" name="quantity"></div><br/>
+			  <div style="text-align:center; font-size: 20px">Set Price: <input type="int" name="price"></div><br/>
+			 
+			  <div style="text-align:center; font-size: 20px">Where Shop ID: <input type="text" name="shop_id"></div><br/>
+			  <div style="text-align:center; font-size: 20px">Where Selling Item: <input type="text" name="selling_item"></div><br/>
 		  <br/>
-		  <div style="text-align:center; font-size: 20px"><input type="submit" value="Modify"></div><br/>
+			  <div style="text-align:center; font-size: 20px"><input type="submit" value="Modify"></div><br/>
+		  </form>
+		  
+		  <div class="title" style="color:white";> Delete Item </div>
+          <form action = "delete_club_shop.php" method="post">
+			  <div style="text-align:center; font-size: 20px">Where Shop ID: <input type="text" name="shop_id"></div><br/>
+			  <div style="text-align:center; font-size: 20px">Where Selling Item: <input type="text" name="selling_item"></div><br/>
+			  <br/>
+			  <div style="text-align:center; font-size: 20px"><input type="submit" value="Delete"></div><br/>
 		  </form>
 		  <!-- here we will write php codes to fetch data from database and will show in the rows of this table -->
 		  

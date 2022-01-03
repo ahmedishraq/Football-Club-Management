@@ -118,11 +118,10 @@
 <nav>
 	<ul>
 	<li><b><a href="index.php">HOME</a></b></li>
-	<li><b><a href="show_players.php">PLAYERS</a></b></li>
+	<li><b><a href="modify_players.php">PLAYERS</a></b></li>
 	<li><b><a href="show_club_staff.php">CLUB STAFF</a></b></li>
-	<li><b><a href="show_board_members.php">BOARD MEMBERS</a></b></li>
-	<li><b><a href="show_club_shop.php">CLUB SHOP</a></b></li>
-
+	<li><b><a href="add_update_board_members.php">BOARD MEMBERS</a></b></li>
+	<li><b><a href="add_update_shop_staff.php">SHOP STAFF</a></b></li>
 </ul>
 </nav>
 

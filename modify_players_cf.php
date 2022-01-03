@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MANCHESTER UNITED</title>
+    <title>Manchester United</title>
     <style>
     body{
     	font-family:"Arial", sans-serif;
@@ -118,49 +118,61 @@
 <nav>
 	<ul>
 	<li><b><a href="index.php">HOME</a></b></li>
-	<li><b><a href="modify_players.php">PLAYERS</a></b></li>
-	<li><b><a href="show_club_staff.php">CLUB STAFF</a></b></li>
-	<li><b><a href="add_update_board_members.php">BOARD MEMBERS</a></b></li>
-	<li><b><a href="add_update_shop_staff.php">SHOP STAFF</a></b></li>
+	<li><b><a href="#">PLAYERS</a></b></li>
+	<li><b><a href="#">CLUB STAFF</a></b></li>
+	<li><b><a href="#">BOARD MEMBERS</a></b></li>
+	<li><b><a href="#">SHOP STAFF</a></b></li>
 </ul>
 </nav>
 
 <!-- contents -->
 
+
+
+
 <section id = "section1">
-        <div class="title" style="color:white";> Add a New Shop Staff </div>
+		<div class="title" style ="color:white";>Insert New Player</div>
+		
+		<form action="insert_player.php" method="post">
+			
+		<div style="text-align:center; font-size: 20px"> Jersey No.: <input type="int" name="Jersey_No"> </div> <br/>
+		<div style="text-align:center; font-size: 20px">	First Name: <input type="text" name="First_Name"> </div> <br/>
+		<div style="text-align:center; font-size: 20px">	Last Name: <input type="text" name="Last_Name"> </div> <br/>
+		<div style="text-align:center; font-size: 20px">	Age: <input type="int" name="Age"> </div> <br/>
+			<br/>
+			
+			<br/>
 
-        
-          <form action = "insert_shop_staff.php" method="post">
-		  <div style="text-align:center; font-size: 20px">Staff ID: <input type="text" name="staff_id"></div><br/>
-		  <div style="text-align:center; font-size: 20px">Name: <input type="text" name="name"></div><br/>
-		  <div style="text-align:center; font-size: 20px">Email: <input type="text" name="email"></div><br/>
-		  <div style="text-align:center; font-size: 20px">Salary: <input type="int" name="salary"></div><br/>
-		  <div style="text-align:center; font-size: 20px">Supervisor: <input type="text" name="supervisor"></div><br/>
-		  <br/>
-		  <div style="text-align:center; font-size: 15px"><input type="submit" value="Add to Database"></div><br/>
-		  </form>
-		  <div class="title" style="color:white";> Modify Shop Staff </div>
+		<div style="text-align:center; font-size: 20px"><input type="submit" value="Insert"></div>
+		</form>
+		<div class="title" style ="color:white";>Update Player</div>
+		<form action = "update_players.php" method="post">
+		
+		<div style="text-align:center; font-size: 20px">Set First Name: <input type="text" name="First_Name"></div><br/>
+			<div style="text-align:center; font-size: 20px">Set Last Name: <input type="text" name="Last_Name"></div><br/>
+			<div style="text-align:center; font-size: 20px">Set Age: <input type="int" name="Age"></div><br/>
+          <div style="text-align:center; font-size: 20px">Where Jersey No: <input type="int" name="Jersey_No"></div><br/>
+          <br/>
+          <div style="text-align:center; font-size: 20px"><input type="submit" value="Update"></div><br/>
+		</form>
+</section>
 
-        
-          <form action = "modify_shop_staff.php" method="post">
-		  <div style="text-align:center; font-size: 20px">SET Name: <input type="text" name="name"></div><br/>
-		  <div style="text-align:center; font-size: 20px">SET Email: <input type="text" name="email"></div><br/>
-		  <div style="text-align:center; font-size: 20px">SET Salary: <input type="int" name="salary"></div><br/>
-		  <div style="text-align:center; font-size: 20px">SET Supervisor: <input type="text" name="supervisor"></div><br/>
-		 
-		  <div style="text-align:center; font-size: 20px">WHERE Staff ID: <input type="text" name="staff_id"></div><br/>
-		  <br/>
-		  <div style="text-align:center; font-size: 20px"><input type="submit" value="Modify"></div><br/>
-		  </form>
-		  <!-- here we will write php codes to fetch data from database and will show in the rows of this table -->
-		  
-		  
+<nav>
+	<ul style="margin-left:35%;">
+	<li><b><a href="modify_players.php">MODIFY PLAYERS</a></b></li>
+	<li><b><a href="modify_injury.php">MODIFY INJURY</a></b></li>
+	<li><b><a href="modify_skills.php">MODIFY SKILLS</a></b></li>
+
+</ul>
+</nav>	
+
+
+<!-- main footer -->
 </section>
 <footer>
 <h5 style="color:black" align="center";>Copyright &copy;2021-2022 , Manchester United</h5>
 <p style="color:red" align="center";>All rights are reserved.</p>
-<small style="color:black">Developed & maintained by Mustakin, Al-Wakil, Sababa, Ishraq, Bidhan</small>
+<small style="color:black">Developed & maintained by Mustakin, Wakil, Sababa, Ishraq, Bidhan</small>
 </footer>
 
 
