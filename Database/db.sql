@@ -29,6 +29,14 @@ create table shop_staff
 		supervisor varchar(15)
 		);
 
+create table club_staff
+	(
+		initial varchar(10),
+		salary varchar(30),
+		name varchar(40),
+		position varchar(50)
+		);
+
 insert into board (member_id, name, joining_date) values
 ('m01', 'Avram Gui', '2020-06-18'),
 ('m02', 'John Hooks ', '2019-04-13'),
@@ -52,3 +60,15 @@ insert into shop_staff (staff_id, name, email, salary, supervisor) values
 ('st09', 'Piu Jane', 'piujane23@gmail.com', 6000, 'st01'),
 ('st10', 'Kate Hon', 'katehon2@gmail.com', 5000, 'st08'),
 ('st11', 'Jim Halpart', 'jimhal@gmail.com', 2500, 'st08');
+
+
+insert into club_staff (initial, salary, name, position) values
+('AM', '£35000', 'Andrew Meredith', 'Chief Analyst'),
+('CA', '£30000', 'Chris Armas', 'Assistant Manager'),
+('MC', '£35000', 'Mike Clegg', 'Conditioning Coach'),
+('MMA', '£35000', 'Md Mostafizur', 'Goalkeeping coach'),
+('MP', '£30000', 'Mike Phelan', 'Assistant Manager'),
+('NC', '£25000', 'Nick Cox', 'Academy Manager'),
+('RH', '£35000', 'Richard Hartis', 'Goalkeeping Coach'),
+('RR', '£50000', 'Ralf Rangnick', 'Manager'),
+('RT', '£20000', 'Rod Thornley', 'Physiotherapist');
