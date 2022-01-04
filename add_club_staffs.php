@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Manchester United</title>
+    <title>MANCHESTER UNITED</title>
     <style>
     body{
     	font-family:"Arial", sans-serif;
@@ -118,10 +118,11 @@
 <nav>
 	<ul>
 	<li><b><a href="index.php">HOME</a></b></li>
-	<li><b><a href="#">PLAYERS</a></b></li>
-	<li><b><a href="#">CLUB STAFF</a></b></li>
-	<li><b><a href="#">BOARD MEMBERS</a></b></li>
-	<li><b><a href="#">SHOP STAFF</a></b></li>
+	<li><b><a href="modify_players.php">PLAYERS</a></b></li>
+	<li><b><a href="show_club_staffs.php">CLUB STAFF</a></b></li>
+	<li><b><a href="add_update_board_members.php">BOARD MEMBERS</a></b></li>
+	<li><b><a href="add_update_shop_staff.php">CLUB SHOP</a></b></li>
+
 </ul>
 </nav>
 
@@ -131,40 +132,33 @@
 
 
 <section id = "section1">
-		<div class="title" style ="color:white";>Insert New Player</div>
+		<div class="title" style ="color:white";>Insert New Club Staff</div>
 		
-		<form action="insert_player.php" method="post">
+		<form action="insert_club_staffs.php" method="post">
 			
-		<div style="text-align:center; font-size: 20px"> Jersey No.: <input type="int" name="Jersey_No"> </div> <br/>
-		<div style="text-align:center; font-size: 20px">	First Name: <input type="text" name="First_Name"> </div> <br/>
-		<div style="text-align:center; font-size: 20px">	Last Name: <input type="text" name="Last_Name"> </div> <br/>
-		<div style="text-align:center; font-size: 20px">	Age: <input type="int" name="Age"> </div> <br/>
+		<div style="text-align:center; font-size: 20px"> Initial: <input type="text" name="initial"> </div> <br/>
+		<div style="text-align:center; font-size: 20px"> Salary <input type="text" name="salary"> </div> <br/>
+		<div style="text-align:center; font-size: 20px"> Name <input type="text" name="name"> </div> <br/>
+		<div style="text-align:center; font-size: 20px"> Position <input type="text" name="position"> </div> <br/>
 			<br/>
 			
 			<br/>
 
 		<div style="text-align:center; font-size: 20px"><input type="submit" value="Insert"></div>
 		</form>
-		<div class="title" style ="color:white";>Update Player</div>
-		<form action = "update_players.php" method="post">
+		<div class="title" style ="color:white";>Update Club Staff</div>
+		<form action = "update_club_staff.php" method="post">
 		
-		<div style="text-align:center; font-size: 20px">Set First Name: <input type="text" name="First_Name"></div><br/>
-			<div style="text-align:center; font-size: 20px">Set Last Name: <input type="text" name="Last_Name"></div><br/>
-			<div style="text-align:center; font-size: 20px">Set Age: <input type="int" name="Age"></div><br/>
-          <div style="text-align:center; font-size: 20px">Where Jersey No: <input type="int" name="Jersey_No"></div><br/>
+		<div style="text-align:center; font-size: 20px">Set Salary: <input type="text" name="salary"></div><br/>
+			<div style="text-align:center; font-size: 20px">Set Name: <input type="text" name="name"></div><br/>
+			<div style="text-align:center; font-size: 20px">Set Position: <input type="text" name="position"></div><br/>
+          <div style="text-align:center; font-size: 20px">Where Initial: <input type="text" name="initial"></div><br/>
           <br/>
           <div style="text-align:center; font-size: 20px"><input type="submit" value="Update"></div><br/>
 		</form>
 </section>
 
-<nav>
-	<ul style="margin-left:35%;">
-	<li><b><a href="modify_players.php">MODIFY PLAYERS</a></b></li>
-	<li><b><a href="modify_injury.php">MODIFY INJURY</a></b></li>
-	<li><b><a href="modify_skills.php">MODIFY SKILLS</a></b></li>
 
-</ul>
-</nav>	
 
 
 <!-- main footer -->
@@ -177,4 +171,4 @@
 
 
 </body>
-</html>
+</html>	

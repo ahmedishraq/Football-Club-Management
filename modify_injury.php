@@ -15,7 +15,7 @@
 
 			font-family: "Arial" , sans-serif;
 			text-align: center;
-			background-image: url("https://drive.google.com/uc?export=view&id=1f7N-8LcI2PVpLm7LRHWtPtZ-yJCX-qKc");
+			background-image: url("images/bg.jpg");
 
 						color: #b30000;
 						padding:250px;

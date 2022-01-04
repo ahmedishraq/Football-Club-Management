@@ -13,7 +13,8 @@
 
   <style>
     header{
-      background-image: url("https://drive.google.com/uc?export=view&id=1f7N-8LcI2PVpLm7LRHWtPtZ-yJCX-qKc");
+      /*background-image: url("https://drive.google.com/uc?export=view&id=1f7N-8LcI2PVpLm7LRHWtPtZ-yJCX-qKc");*/
+      background-image: url("images/bg.jpg");
     }
   </style>
 </head>
