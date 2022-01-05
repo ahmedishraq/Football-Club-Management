@@ -10,14 +10,16 @@ create table users
 		password varchar(30) not null,
 		phone_number int(13) not null,
 		region varchar(20) not null,
-		date_of_birth int(8) not null 
+		date_of_birth int(8) not null,
+		primary key (user_id) 
 		);
 
 create table board
 	(
 		member_id varchar(20),
 		name varchar(40),
-		joining_date date
+		joining_date date,
+		primary key (member_id)
 		);
 
 create table shop_staff
@@ -26,7 +28,8 @@ create table shop_staff
 		name varchar(40),
 		email varchar(50),
 		salary varchar(20),
-		supervisor varchar(15)
+		supervisor varchar(15),
+		primary key(staff_id)
 		);
 
 create table club_staff
@@ -34,7 +37,8 @@ create table club_staff
 		initial varchar(10),
 		salary varchar(30),
 		name varchar(40),
-		position varchar(50)
+		position varchar(50),
+		primary key (initial)
 		);
 
 insert into board (member_id, name, joining_date) values
