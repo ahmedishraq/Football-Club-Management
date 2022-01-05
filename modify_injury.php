@@ -122,6 +122,7 @@
 	<li><b><a href="show_club_staff.php">CLUB STAFF</a></b></li>
 	<li><b><a href="show_board_members.php">BOARD MEMBERS</a></b></li>
 	<li><b><a href="show_club_shop.php">CLUB SHOP</a></b></li>
+	<li><b><a href="index.php">LOG OUT</a></b></li>
 
 </ul>
 </nav>

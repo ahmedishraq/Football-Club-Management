@@ -119,7 +119,7 @@
 	<ul>
 	<li><b><a href="index.php">HOME</a></b></li>
 	<li><b><a href="#">PLAYERS</a></b></li>
-	<li><b><a href="#">CLUB STAFF</a></b></li>
+	<li><b><a href="add_club_staff.php">CLUB STAFF</a></b></li>
 	<li><b><a href="#">BOARD MEMBERS</a></b></li>
 	<li><b><a href="#">CLUB SHOP</a></b></li>
 	<li><b><a href="index.php">LOG OUT</a></b></li>
